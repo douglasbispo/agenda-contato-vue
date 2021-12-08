@@ -24,7 +24,8 @@ new Vue({
                 this.contatos.push({ nome: this.nome, telefone: this.telefone })
             }
 
-
+            this.nome = null;
+            this.telefone = null;
             e.preventDefault()
         }
     }
