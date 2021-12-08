@@ -22,10 +22,9 @@ new Vue({
 
             if (!this.error_nome.length && !this.error_telefone.length) {
                 this.contatos.push({ nome: this.nome, telefone: this.telefone })
+                this.nome = null;
+                this.telefone = null;
             }
-
-            this.nome = null;
-            this.telefone = null;
             e.preventDefault()
         }
     }
